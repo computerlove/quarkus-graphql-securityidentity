@@ -27,3 +27,16 @@ Running with Quarkus 2.11.1 results in the given output in console
 ```
 
 Notice the combinations of contextId, operation and username.
+
+Running with 999-SNAPSHOT (august 5, 16:15):
+```text
+19269407081 [authenticatedUser] beforeExecute:Username: «jdoe»
+19269407080 [userProfile] beforeExecute:Username: «jdoe»
+19269407082 [organzation] beforeExecute:Username: «jdoe»
+19269407083 [organzations] beforeExecute:Username: «jdoe»
+
+19269407083 [organzations] afterExecute:Username: «jdoe»
+19269407082 [organzation] afterExecute:Username: «jdoe»
+19269407081 [organzations] afterExecute:Username: «jdoe»
+19269407080 [organzation] afterExecute:Username: «jdoe»
+```
