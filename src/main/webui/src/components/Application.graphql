@@ -1,0 +1,38 @@
+query authenticatedUser {
+    authenticatedUser {
+        username
+        roles
+        token
+    }
+}
+
+query organzation {
+    organzation {
+        name
+        invoices {
+            name
+            amount
+        }
+        documents {
+            name
+        }
+    }
+}
+
+query organzations {
+    organzations {
+        name
+    }
+}
+
+
+query userProfile {
+    userProfile {
+        name
+        username
+        settings {
+            setting
+            moresetting
+        }
+    }
+}
